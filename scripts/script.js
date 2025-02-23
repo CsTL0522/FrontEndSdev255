@@ -1,6 +1,6 @@
 // event listener triggered when DOM loaded, visit
 addEventListener("DOMContentLoaded", async function() {
-    const response = await this.fetch("http://localhost:3000/api/songs")
+    const response = await this.fetch("https://road-tranquil-tern.glitch.me")
     const songs = await response.json()
 
     let html = ""
