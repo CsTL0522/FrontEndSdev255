@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Song Front End</title>
     <script src="scripts/script.js"></script>
-    <script defer src="/scripts/auth.js"></script>
-    <script defer src="/scripts/init.js"></script>
+    
 </head>
 <body>
     <nav>
@@ -16,9 +15,20 @@
         <button id="logout" style"float: right; >Logout</button>
 
     </nav>
-    <h1>Songs</h1>
-    <ul>
-        <div id="list_of_songs"></div>
-    </ul>
+    
+    <form id="login" autocomplete="off">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="text" id="password">
+        </div>
+        <button id="loginBtn" type="button">Login</button>
+        <p id="errorMsg"></p>
+    </form>
+
+    <button id="statusBtn">Display Status</button>
 </body>
 </html>
